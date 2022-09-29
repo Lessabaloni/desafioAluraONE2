@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <!--Título-->
+        <title>Juego del Ahorcado</title>
+        <link rel="icon" href="flor.png">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="headerBox">
+                <img src="Logo.png" class="logo"> 
+            </div>
+        </header>
+        
+        <main>
+            <section>
+                <div class="canvasArea">
+                    <canvas class="canvas" width="280" height="400"></canvas>
+                </div>
+            </section>
+            <section class="mobileKeyboard">
+                <div class="rowOne">
+                    <button id="letterQ" class="mobileKeyboardLetter">Q</button>
+                    <button id="letterW" class="mobileKeyboardLetter">W</button>
+                    <button id="letterE" class="mobileKeyboardLetter">E</button>
+                    <button id="letterR" class="mobileKeyboardLetter">R</button>
+                    <button id="letterT" class="mobileKeyboardLetter">T</button>
+                    <button id="letterY" class="mobileKeyboardLetter">Y</button>
+                    <button id="letterU" class="mobileKeyboardLetter">U</button>
+                    <button id="letterI" class="mobileKeyboardLetter">I</button>
+                    <button id="letterO" class="mobileKeyboardLetter">O</button>
+                    <button id="letterP" class="mobileKeyboardLetter">P</button>
+                </div>
+                <div class="rowTwo">
+                    <button id="letterA" class="mobileKeyboardLetter">A</button>
+                    <button id="letterS" class="mobileKeyboardLetter">S</button>
+                    <button id="letterD" class="mobileKeyboardLetter">D</button>
+                    <button id="letterF" class="mobileKeyboardLetter">F</button>
+                    <button id="letterG" class="mobileKeyboardLetter">G</button>
+                    <button id="letterH" class="mobileKeyboardLetter">H</button>
+                    <button id="letterJ" class="mobileKeyboardLetter">J</button>
+                    <button id="letterK" class="mobileKeyboardLetter">K</button>
+                    <button id="letterL" class="mobileKeyboardLetter">L</button>
+                </div>
+                <div class="rowThree">
+                    <button id="letterZ" class="mobileKeyboardLetter">Z</button>
+                    <button id="letterX" class="mobileKeyboardLetter">X</button>
+                    <button id="letterC" class="mobileKeyboardLetter">C</button>
+                    <button id="letterV" class="mobileKeyboardLetter">V</button>
+                    <button id="letterB" class="mobileKeyboardLetter">B</button>
+                    <button id="letterN" class="mobileKeyboardLetter">N</button>
+                    <button id="letterM" class="mobileKeyboardLetter">M</button>
+                </div>
+            </section>
+            <section id="principal">
+                <p id="ganaste"></p>
+                <p id="perdiste"></p>
+                <textarea id="input_word" class="input_word" maxlength="8" rows="10" cols="50" placeholder="Ingresa una palabra"></textarea>
+                <div id="useRestrictionArea" class="useRestrictionArea">
+                  <img class="exclamationMarkSvg" src="signo.png" style="width: 15px; height: 15px" alt="signo de exclamación">
+                  <p id="useRestrictionText" class="useRestrictionText">
+                    Max de 8 Letras
+                  </p>
+                </div>
+                <div class="buttonsCenter">
+                    <button id="iniciarJuegoButton" class="iniciarJuegoButton" type="button">Iniciar Juego</button>
+                    <button id="agregarPalabraButton" class="agregarPalabraButton" type="button">Agregar nueva palabra</button>
+                </div>
+            </section>
+        </main>
+                <footer>
+                <p>Juego desarrollado por Leslie Geordani Abaloni Armas <img src="flor.png" style="width: 20px; height: 20px;"> | &#169 2022</p>
+                <p>Sprint 02-Juego del Ahorcado | Alura LATAM | Oracle Next Education</p>
+                </footer>
+            </div>
+
+        <!--JavaScript--> 
+        <script src="horca.js"></script>  
+    </body>
+</html>
